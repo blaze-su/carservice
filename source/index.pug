@@ -1,0 +1,131 @@
+doctype html
+html(lang="en")
+    head
+        title= pageTitle
+    body
+        header.header
+            .header_logo #logo
+            nav.nav
+                ul.nav__items
+                    li.nav__item
+                        a(class="nav__link" href="#services") Услуги
+                    li.nav__item
+                        a(class="nav__link" href="#price") Прайс
+                    li.nav__item
+                        a(class="nav__link" href="#stock") Акции
+                    li.nav__item
+                        a(class="nav__link" href="#feedback") Отзывы
+                    li.nav__item
+                        a(class="nav__link" href="#gallery") Галерея
+                    li.nav__item
+                        a(class="nav__link" href="#contacts") Контакты
+            .header__contacts
+                 .header__phone +7(928)433-44-45
+                 .header__phone-button
+        section.banner
+            .banner__title Первый автосервис
+            .banner__description ремонт с гарантий точно в срок
+            picture.banner__pictire
+        section.services
+            .title Услуги
+            .services__items
+                -
+                    var services = [
+                        { name: "Капитальны ремонт ДВС"},
+                        { name: "Ремонт рулевой рейки"},
+                        { name: "Ремонт ходовой"},
+                        { name: "Топливная система"},
+                        { name: "Платное ТО"},
+                        { name: "Электрика"},
+                        { name: "Ремонт ABS"},
+                        { name: "Ремонт генератора"},
+                        { name: "Ремонт стартеров"},
+                        { name: "Замена масла АКПП"},
+                        { name: "Шиномонтаж"}
+                    ]
+
+                each service in services
+                    .services__item
+                        .services__image
+                        .services__name= service.name
+            button(type="button" class="services__button")
+        section.brands
+            .titile Мы работаем с
+            .brands__items
+                -
+                    var brands = [
+                        { image: "Мерседес"},
+                        { image: "Бмв"},
+                        { image: "Шкода"},
+                        { image: "Лекусус"},
+                        { image: "Тойота"},
+                        { image: "Мерседес"},
+                        { image: "Бмв"},
+                        { image: "Шкода"},
+                        { image: "Лекусус"},
+                        { image: "Тойота"},
+                        { image: "Мерседес"},
+                        { image: "Бмв"},
+                        { image: "Шкода"},
+                        { image: "Лекусус"},
+                        { image: "Тойота"}
+                    ]
+                each brand in brands
+                    .brands__item= brand.image
+        section.autoparts
+            .title Подбор автозапчастей
+            .description более 35 000 запчастей в наличии
+
+            form.autoparts__form
+                label
+                    input(type="text" name="brand" placeholder="марка")
+                label
+                    input(type="text" name="model" placeholder="модель")
+                label
+                    input(type="text" name="generation" placeholder="поколение")
+                label
+                    input(type="text" name="phone" placeholder="телефон")
+                label
+                    input(type="text" name="vin" placeholder="Введите VIN / № кузова (желательно)")
+                label
+                    textarea(type="text" name="message" placeholder="Напишите запчасти, которые ищите")
+
+                button(type="submit" class="autoparts__button")
+        section.questions
+            .title Вопрос - Ответ
+
+            .questions__items
+            - for(var i = 0; i < 5; i++)
+                .questions__item
+                    .questions__header
+                        .questions__title= i + ". Вопрос номер"
+                        .questions__view
+                            i.questions__show
+                    .questions__detial.
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin
+                        gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum
+                        sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nam fermentum,
+                        nulla luctus pharetra vulputate, felis tellus mollis orci, sed rhoncus sapien nunc eget odio.
+
+
+            button(type="submit" class="autoparts__button")
+
+        section.warranty
+            .title Гарантия
+            .warranty__items
+                .warranty__item
+                    .warranty__circle 0 ₽
+                    .warranty__title Не решим проблемы не возьмем деньги
+                .warranty__item
+                    .warranty__circle.
+                        6 месяцев
+                        или
+                        10 000
+                    .warranty__title На все виды работ и запчасти**
+                .warranty__item
+                    .warranty__circle -5%
+                    .warranty__title Не успеем в срок дадим скидку
+
+            button(type="submit" class="warranty__button")
+
+            .warranty__note ** Гарантия не распространяется на китайские запчасти

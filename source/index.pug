@@ -151,3 +151,13 @@ html(lang="en")
                             montes, nascetur ridiculus mus.
         section.contacts
             .map Карта
+        section.modal
+            .title Остались вопросы?
+            form.modal__form
+                .modal__title Оставьте Ваши контакты
+                .modal__description Мы перезвоним Вам в течении 30 минут
+                input(class="modal__input" name="modalName" placeholder="Имя")
+                input(class="modal__input" name="modalPhone" placeholder="+7(***)***-**-**")
+                textarea(class="modal__textarea" name="modalQuestion" placeholder="Вопрос")
+
+            button(type="submit" class="modal__button")

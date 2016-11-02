@@ -88,7 +88,7 @@ html(lang="en")
                 label
                     input(type="text" name="vin" placeholder="Введите VIN / № кузова (желательно)")
                 label
-                    textarea(type="text" name="message" placeholder="Напишите запчасти, которые ищите")
+                    textarea(name="message" placeholder="Напишите запчасти, которые ищите")
 
                 button(type="submit" class="autoparts__button")
         section.questions
@@ -129,3 +129,23 @@ html(lang="en")
             button(type="submit" class="warranty__button")
 
             .warranty__note ** Гарантия не распространяется на китайские запчасти
+        section.feedback
+            .title Отзывы
+            .feedback__items
+            - for(var i = 0; i < 3; i++)
+                .feedback__items
+                    .feedback__photo #фотография
+                    .feedback__content
+                        .feedback__name Михаил
+                        .feedback__car BMW X5
+                        .feedback__number т006ор 190
+                        .feedback__text.
+                            Lorem ipsum dolor sit amet,
+                            consectetur adipiscing elit. Aenean
+                            euismod bibendum laoreet. Proin
+                            gravida dolor sit amet lacus
+                            accumsan et viverra justo
+                            commodo. Proin sodales pulvinar
+                            tempor. Cum sociis natoque
+                            penatibus et magnis dis parturient
+                            montes, nascetur ridiculus mus.

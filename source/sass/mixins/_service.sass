@@ -1,0 +1,21 @@
+@import "const"
+
+.services
+  background: #eaeaea
+  background: linear-gradient(to top, #eaeaea, #fff)
+
+  +clearfix()
+  &__item
+    +debug()
+    float: left
+    background: yellow
+
+  &__image
+    background: greenyellow
+    height: 116px
+
+  &__name
+    +OpenSans(bold)
+    font-size: 20px
+    color: $black
+    text-align: center

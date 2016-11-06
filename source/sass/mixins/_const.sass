@@ -1,0 +1,26 @@
+@import '_color'
+@import "_fonts"
+@import "_forms"
+
+
+$phone            : 320px
+$iPhone           : 375px
+$tabletSmall      : 600px
+$tabletPortrait   : 768px
+$tabletLandscape  : 1024px
+$desktop          : 1280px
+
+@mixin debug($color: red)
+  outline: 1px dashed $color
+
+@mixin clearfix()
+  &:before,
+  &:after
+    content: ""
+    display: table
+
+  &:after
+    clear: both
+
+.text-center
+  text-align: center

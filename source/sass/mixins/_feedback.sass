@@ -1,0 +1,81 @@
+.feedback
+  +clearfix()
+  &__items
+    +clearfix()
+
+  &__item
+    float: left
+    border: 1px solid $grayLine
+    width: 314px
+    margin: 0 10px
+
+  &__photo
+    height: 220px
+    background: $gray
+    border-bottom: 4px solid $yellow
+
+  &__content
+    position: relative
+    padding: 20px
+
+  &__name
+    +OpenSans(bold)
+    font-size: 24px
+    color: $black
+
+  &__car
+    +OpenSans(semibold)
+    font-size: 16px
+    color: $black
+    margin-bottom: 20px
+
+  &__number
+    position: absolute
+    right: 20px
+    top: 20px
+    +clearfix()
+    display: inline-block
+    border: 1px solid $black
+    border-radius: 2px
+    background: $black
+
+    &-id
+      float: left
+      +OpenSans(bold)
+      font-size: 16px
+      text-transform: uppercase
+      border: 1px solid $black
+      border-radius: 2px
+      padding: 5px 3px 6px 8px
+      background: $white
+
+    &-region
+      float: left
+      +OpenSans(bold)
+      font-size: 14px
+      border: 1px solid $black
+      border-radius: 2px
+      padding: 1px 2px 1px 3px
+      background: $white
+      line-height: 15px
+
+    &-region-rus
+      +OpenSans()
+      text-transform: uppercase
+      margin-top: -1px
+      font-size: 9px
+
+      img
+        border-radius: 1px
+        margin-left: 2px
+        height: 8px
+
+
+
+
+  &__text
+    +OpenSans(light)
+    font-size: 16px
+    color: $black
+
+

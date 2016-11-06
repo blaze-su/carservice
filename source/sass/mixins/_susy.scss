@@ -1,0 +1,14 @@
+$susy: (
+  columns: 12,
+  gutter: 1/4,
+  math: fluid,
+  output: float,
+  gutter-position: inside,
+  container: 1140px,
+  debug: (
+      image: show,
+      color: blue,
+      output: background,
+      toggle: top right
+  )
+)

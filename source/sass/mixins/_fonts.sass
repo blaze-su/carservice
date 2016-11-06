@@ -1,0 +1,34 @@
+@font-face
+  font-family: "OpenSans-Bold"
+  src: url("/fonts/OpenSans/OpenSans-Bold.ttf")
+
+@font-face
+  font-family: "OpenSans-ExtraBold"
+  src: url("/fonts/OpenSans/OpenSans-ExtraBold.ttf")
+
+@font-face
+  font-family: "OpenSans-Light"
+  src: url("/fonts/OpenSans/OpenSans-Light.ttf")
+@font-face
+  font-family: "OpenSans-Regular"
+  src: url("/fonts/OpenSans/OpenSans-Regular.ttf")
+
+@font-face
+  font-family: "OpenSans-Semibold"
+  src: url("/fonts/OpenSans/OpenSans-Semibold.ttf")
+
+@mixin OpenSans($style: regular)
+  @if($style == bold)
+    font-family: "OpenSans-Bold"
+
+  @if($style == extraBold)
+    font-family: "OpenSans-ExtraBold"
+
+  @if($style == regular)
+    font-family: "OpenSans-Regular"
+
+  @if($style == light)
+    font-family: "OpenSans-Light"
+
+  @if($style == semibold)
+    font-family: "OpenSans-Semibold"

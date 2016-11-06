@@ -1,0 +1,87 @@
+@import '_const'
+
+.banner
+  +clearfix()
+  background: url("../images/key-1200.jpg") top center no-repeat
+  min-height: 560px
+  padding: 40px
+
+  &__title
+    +OpenSans(extraBold)
+    font-size: 28px
+    text-align: center
+    text-transform: uppercase
+
+  &__description
+    +OpenSans(semibold)
+    font-size: 20px
+    text-align: center
+    color: $black
+
+  &__pictire
+    margin-top: -50px
+    display: block
+    +debug()
+    min-height: 400px
+
+
+
+.actions
+  box-sizing: border-box
+
+  &__item
+    position: relative
+    float: left
+    margin: 40px 0.877192% 0
+    border: 1px solid $grayLine
+    border-radius: 2px
+    padding: 15px
+    background: $white
+
+  &__image
+    margin-top: -40px
+    float: left
+    width: 48%
+    padding-bottom: 20px
+
+    img
+      width: 100%
+
+  &__title
+    +OpenSans(bold)
+    font-size: 20px
+    color: $black
+    width: 48%
+    float: right
+    padding: 0 0 20px 0
+
+  &__deadline
+    clear: both
+    float: left
+    width: 40%
+    +OpenSans()
+    font-size: 16px
+    color: $yellow
+
+  &__buttom
+    float: right
+    +OpenSans(semibold)
+    font-size: 20px
+    padding: 10px 30px
+    color: #342509
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.37)
+    border: 1px solid #c28e00
+    border-radius: 6px
+    background: #ffd800
+    background: linear-gradient(to top, #f09e00, #ffd800)
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.5), 0px 1px 0px 0px rgba(255, 255, 255,0.7) inset
+
+    &:hover
+      background: #fefcea
+      background: linear-gradient(to top, #ffd800, #f09e00)
+      border: 1px solid #ba7b00
+
+
+
+
+

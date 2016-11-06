@@ -1,0 +1,46 @@
+.warranty
+  +clearfix()
+  background: $black
+  color: #c8c8c8
+
+  &__items
+    +clearfix()
+
+  &__item
+    +debug()
+
+  &__circle
+    position: relative
+    width: 230px
+    height: 230px
+    margin: 0 auto
+    border-radius: 50%
+    color: $white
+    text-align: center
+    background: $yellow
+    background: rgba($yellow,0.6)
+    +OpenSans(bold)
+    font-size: 48px
+
+    &__small
+      font-size: 26px
+
+    &__center
+      width: 230px
+      height: 230px
+      display: table-cell
+      vertical-align: middle
+      text-align: center
+
+
+  &__title
+    +OpenSans(semibold)
+    font-size: 26px
+    text-align: center
+
+  &__note
+    +OpenSans(light)
+    font-size: 16px
+    text-align: center
+
+

@@ -1,0 +1,43 @@
+.btn
+  &-yellow
+    +OpenSans(semibold)
+    font-size: 20px
+    padding: 10px 30px
+    color: #342509
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.37)
+    border: 1px solid #c28e00
+    border-radius: 6px
+    background: #ffd800
+    background: linear-gradient(to top, #f09e00, #ffd800)
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.5), 0px 1px 0px 0px rgba(255, 255, 255,0.7) inset
+
+    &:hover
+      background: #fefcea
+      background: linear-gradient(to top, #ffd800, #f09e00)
+      border: 1px solid #ba7b00
+
+
+.input
+  &-default
+    +OpenSans()
+    font-size: 18px
+    color: $black
+    padding: 14px 18px
+    margin: 0 20px 20px 0
+    background: $white
+    border: 1px solid $grayLine
+    border-radius: 2px
+
+    &:focus
+      border: 1px solid $yellow
+      outline: none
+      box-shadow: 0px 0px 6px 0px $yellow
+
+    &-error
+      border: 1px solid red
+      box-shadow: 0px 0px 6px 0px red
+
+      &:focus
+        border: 1px solid red
+        outline: none
+        box-shadow: 0px 0px 6px 0px red

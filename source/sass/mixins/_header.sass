@@ -1,0 +1,58 @@
+@import '_const'
+
+.header
+  +clearfix()
+  padding: 10px 0
+  border-bottom: 1px solid $grayLine
+
+  &__logo
+    float: left
+    +debug($yellow)
+    height: 50px
+    width: 180px
+    background: url("../svg/logo.svg") no-repeat top left
+
+  &__contacts
+    float: right
+    text-align: right
+    +debug(blue)
+
+  &__phone
+    +OpenSans(bold)
+    font-size: 24px
+    color: $yellow
+
+  &__phone-request
+    +OpenSans(light)
+    font-size: 14px
+    color: $gray
+    text-decoration: underline
+
+
+.nav
+  +respond-to($iPhone)
+    display: none
+
+  &__items
+    margin: 0 auto
+    +debug()
+    margin: 0
+    padding: 20px 0
+    text-align: center
+
+  &__item
+    display: inline-block
+
+    &:last-child
+      a
+        border: none
+
+  &__link
+    text-decoration: none
+    color: $gray
+    border-right: 1px solid $gray
+    padding: 0 10px
+    +OpenSans(light)
+    font-size: 16px
+
+
